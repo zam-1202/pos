@@ -1,4 +1,4 @@
-
+var items = "";
 function suggetion() {
 
      $('#sug_input').keyup(function(e) {
@@ -44,27 +44,26 @@ function suggetion() {
 
  }
   $('#sug-form').submit(function(e) {
-      var formData = {
-          'p_name' : $('input[name=title]').val()
-      };
-        // process the form
-        $.ajax({
-            type        : 'POST',
-            url         : 'ajax.php',
-            data        : formData,
-            dataType    : 'json',
-            encode      : true
-        })
-            .done(function(data) {
-                //console.log(data);
-                $('#product_info').html(data).show();
-                total();
-                $('.datePicker').datepicker('update', new Date());
-
-            }).fail(function() {
-                $('#product_info').html(data).show();
-            });
-      e.preventDefault();
+    var formData = {
+        'p_name' : $('input[name=title]').val()
+    };
+    // process the form
+    $.ajax({
+        type        : 'POST',
+        url         : 'ajax.php',
+        data        : formData,
+        dataType    : 'json',
+        encode      : true
+    }).done(function(data) {
+            items = items.concat(data);
+            console.log(items);
+            $('#product_info').html(items).show();
+            total();
+            $('.datePicker').datepicker('update', new Date());
+        }).fail(function() {
+            $('#product_info').html(items).show();
+        });
+    e.preventDefault();
   });
   function total(){
     $('#quantity').change(function(e)  {
