@@ -55,12 +55,12 @@
             $html  .= "<td>";
             $html  .= $datetime = date_create()->format('Y-m-d');
             $html  .= "</td>";
-            $html  .= "<td>";
-            $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">Add sale</button>";
-            $html  .= "</td>";
-            $html  .= "<td>";
-            $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">Generate Receipt</button>";
-            $html  .= "</td>";
+            // $html  .= "<td>";
+            // $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">Add sale</button>";
+            // $html  .= "</td>";
+            // $html  .= "<td>";
+            // $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">Generate Receipt</button>";
+            // $html  .= "</td>";
             $html  .= "</tr>";
         }
         

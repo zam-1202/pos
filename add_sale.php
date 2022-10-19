@@ -93,8 +93,9 @@
             <th> Date</th>
             <th> Action</th>
            </thead>
-             <tbody  id="product_info"> </tbody>
+             <tbody id="product_info"></tbody>
          </table>
+         <button type="submit" name="add_sale" class="btn btn-primary">Generate Receipt</button>
        </form>
       </div>
     </div>
