@@ -67,7 +67,7 @@
             </span>
             <input type="text" id = "sug_input" class="form-control" name="title"  placeholder="Search for product barcode" class="clearfix" autofocus>
             <button type="submit" name = "submit" class="btn btn-success" id="btn-submit" sty;e="width 130px; height:40px; margin-top:-8px;">
-              <i class="icon icon-plus-sign"></i>RAVAANN</button>
+              <i class="icon icon-plus-sign"></i>Search</button>
           </div>
          <div id="result" class="list-group" ></div>
         </div>
